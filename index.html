@@ -424,7 +424,7 @@
 					<h2 class="footer-form-title">Підпишіться на розсилку</h2>
 					<form class="footer-form">
 						<label class="footer-group">
-							<input class="footer-input" type="email" name="email" placeholder="E-mail" />
+							<input class="footer-input" type="email" name="email" placeholder="E-mail" required />
 						</label>
 						<button class="footer-btn" type="submit">
 							Підписатися
@@ -451,21 +451,21 @@
 					<div class="register-form-group" role="group">
 						<label class="form-group">
 							<span class="form-label">Ім'я</span>
-							<input class="form-input" type="text" name="user-name" />
+							<input class="form-input" type="text" name="user-name" required minlength="3" />
 							<svg class="form-icon icon-shadow" width="18" height="18">
 								<use href="./images/icons.svg#icon-person-black"></use>
 							</svg>
 						</label>
 						<label class="form-group">
 							<span class="form-label">Телефон</span>
-							<input class="form-input" type="tel" name="user-phone" />
+							<input class="form-input" type="tel" name="user-phone" pattern="" />
 							<svg class="form-icon" width="18" height="18">
 								<use href="./images/icons.svg#icon-phone-black"></use>
 							</svg>
 						</label>
 						<label class="form-group">
 							<span class="form-label">Пошта</span>
-							<input class="form-input" type="email" name="user-email" />
+							<input class="form-input" type="email" name="user-email" required />
 							<svg class="form-icon" width="18" height="18">
 								<use href="./images/icons.svg#icon-email-black"></use>
 							</svg>
@@ -477,7 +477,7 @@
 					</div>
 
 					<label class="form-agreement">
-						<input class="agreement-input-checkbox visualy-hidden" type="checkbox" name="" id="" />
+						<input class="agreement-input-checkbox visualy-hidden" type="checkbox" name="polyci" id="polyci" />
 						<svg class="form-icon-cheked" width="18" height="18">
 							<use class="form-agreement-icon-uncheck" href="./images/icons.svg#icon-checkbox-1"></use>
 							<use class="form-agreement-icon-check" href="./images/icons.svg#icon-checkbox-2"></use>
